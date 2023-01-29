@@ -6,13 +6,13 @@
         p {
             text-align: justify;
         }
-        .area1 {
+        .picMe {
             float: right 
         }
-        .area4 {
+        .chem {
             display: flex;
             justify-content: center;
-
+            align-items: center;
         }
         tr:nth-child(odd) {
                 background:lightblue;
@@ -40,49 +40,49 @@
   
         span {
             color: black;
-            padding: 1em;
+            /* padding: 1em; */
         }
   
         #area1 {
+            background: rgba(224, 255, 255, 0.599);
             grid-area: 1/1/2/2;
         }
   
         #area2 {
-            /* background: red; */
+            background: rgba(15, 29, 180, 0.686);
             grid-area: 1/2/2/5;
         }
         #area3 {
-            /* background: hsl(102, 36%, 48%); */
+             background: hsl(102, 36%, 48%);
             grid-area: 2/1/5/2;
         }
         #area4 {
             grid-area: 2/2/3/4;
+             background: rgba(156, 37, 57, 0.655); 
         }
         #area5 {
-         background: grey;
+            background: rgba(76, 76, 172, 0.705);
             grid-area: 2/4/3/5;
         }
         #area6 {
-            background: black;
+            background: rgba(36, 153, 189, 0.705);
             grid-area: 3/2/4/3;
         }
         #area7 {
-            background: black;
+            background: rgba(144, 238, 144, 0.633);
             grid-area: 3/3/4/5;
         }
         #area8 {
-            background: black;
+            background: rgba(32, 178, 171, 0.66);
             grid-area: 4/2/5/5;
         }
     </style>
     <div id="mybox">
         <span id="area1">
-            <img src="me_and-Snowflake.HEIC" class = area1 wdith="25" height="75">
+            <img src="me_and-Snowflake.HEIC" class = picMe wdith="25" height="75">
             <p>
                 This is a picture of me with an ice sculpture at the president's ball. 
                 The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
-                And then, I realized that people were literally cutting in front of us because staff TOLD THEM TO. 
-                I was so frustrated.
                     </p>
         </span>
 
@@ -93,6 +93,9 @@
         </span>
 
         <span id="area3">
+            area3
+        </span>
+        <span id="area4">
             <table>
                 <tbody>
                 <tr>
@@ -153,13 +156,27 @@
                 </tbody>
             </table>
         </span>
-        <span id="area4">
-            <img src="chemistry.jpg" class="area4" wdith="200" height="200">
+        <span id="area5">           
+             <img src="chemistry.jpg" class="chem" wdith="200" height="200">
+        </span>
+        <span id="area6">         
+            <ul style="list-style-type:circle">
+            <li><a href="https://www.walmart.com">WLMT</a></li>
+            <li><a href="https://www.Target.com">TRGT</a></li>
+            <li><a href="https://www.Meijer.com">MJR</a></li>
+          </ul>
+        </span>
+         <span id="area7">         
+            <p> The worst part about waiting an hour for the president's ball was that the staff members were telling people who arrived <b> AFTER</b> us to
+            essentially cut in front of us. I was really frustrated, because I had waited a <i> whole hour</i> and had tried to arrive earlier while the late
+            incomers had to wait signifigantly less ime</p>
+            <p>Once I got to the ball, my anger quickly faded. 
+                As soon as I came in, I saw people dancing on stage with the president and there were <b> FIREWORKS</b> which was super surprising. </p>
+                <p><code> print("The experience was much bettter after that.")</code>
+            </p>
+            <p> The experience was much better after that.</p>
         </span>
 
-         <span id="area5">area5</span>
-         <span id="area6">area6</span>
-         <span id="area7">area7</span>
          <span id="area8">area8</span>
       </div>
 </html>
