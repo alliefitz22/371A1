@@ -9,14 +9,80 @@
         img {
             float: right 
         }
+        #mybox {
+
+    display: grid;
+    min-height: 200vh;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-columns: 30% 15% 40% 15%;
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4 area5"
+      "area3 are6 area7"
+      "area3 area8";
+      gap: 2px;
+  }
+  
+  span {
+    text-align: center;
+    color: white;
+    padding: 1em;
+  }
+  
+  #area1 {
+    grid-area: 1/1/2/2;
+    background: hsl(217, 77%, 60%);
+  }
+  
+  #area2 {
+    background: red;
+    grid-area: 1/2/2/5;
+  }
+  #area3 {
+    background: hsl(102, 36%, 48%);
+    grid-area: 2/1/5/2;
+  }
+  #area4 {
+    background: hsl(276, 100%, 50%);
+    grid-area: 2/2/3/4;
+  }
+  #area5 {
+    background: grey;
+    grid-area: 2/4/3/5;
+  }
+  #area6 {
+    background: black;
+    grid-area: 3/2/4/3;
+  }
+  #area7 {
+    background: black;
+    grid-area: 3/3/4/5;
+  }
+  #area8 {
+    background: black;
+    grid-area: 4/2/5/5;
+  }
     </style>
-    <img src="me_and-Snowflake.HEIC" wdith="25" height="600">
-    <p>
-        This is a picture of me with an ice sculpture at the president's ball. 
-        The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
-        And then, I realized that people were literally cutting in front of us because staff TOLD THEM TO. 
-        I was so frustrated. But once I got into the actual dance, I had fun. It was kind of crazy because right when
-        I walked in the president was on stage with some dancers. And then FIREWORKS started to go off on the stage which
-        really shocked me. 
-    </p>
+    <div id="mybox">
+        <span id="area1">
+            <img src="me_and-Snowflake.HEIC" wdith="25" height="600">
+            <p>
+                This is a picture of me with an ice sculpture at the president's ball. 
+                The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
+                And then, I realized that people were literally cutting in front of us because staff TOLD THEM TO. 
+                I was so frustrated. But once I got into the actual dance, I had fun. It was kind of crazy because right when
+                I walked in the president was on stage with some dancers. And then FIREWORKS started to go off on the stage which
+                really shocked me. But after that, the DJ started playing music again and I had a fun time.
+            </p>
+        </span>
+        <span id="area2">area2</span>
+        <span id="area3">area3</span>
+        <span id="area4">area4</span>
+         <span id="area5">area5</span>
+         <span id="area6">area6</span>
+         <span id="area7">area7</span>
+         <span id="area8">area8</span>
+      
+      </div>
 </html>
+
