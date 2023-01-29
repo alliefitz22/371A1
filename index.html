@@ -6,8 +6,12 @@
         p {
             text-align: justify;
         }
-        img {
+        .area1 {
             float: right 
+        }
+        .area4 {
+            justify-content: center;
+
         }
         tr:nth-child(odd) {
                 background:lightblue;
@@ -15,6 +19,10 @@
         tr:nth-child(even) {
              background:grey;
             }
+        td:hover {
+            background-color: rgb(210, 225, 97)
+            }
+        
         #mybox {
 
             display: grid;
@@ -30,7 +38,6 @@
         }
   
         span {
-            text-align: center;
             color: black;
             padding: 1em;
         }
@@ -48,7 +55,6 @@
             grid-area: 2/1/5/2;
         }
         #area4 {
-            background: hsl(276, 100%, 50%);
             grid-area: 2/2/3/4;
         }
         #area5 {
@@ -70,7 +76,7 @@
     </style>
     <div id="mybox">
         <span id="area1">
-            <img src="me_and-Snowflake.HEIC" wdith="25" height="75">
+            <img src="me_and-Snowflake.HEIC" class = area1 wdith="25" height="75">
             <p>
                 This is a picture of me with an ice sculpture at the president's ball. 
                 The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
@@ -145,7 +151,9 @@
             </table>
 
         </span>
-        <span id="area4">area4</span>
+        <span id="area4">
+            <img src="chemistry.jpg" class="area4" wdith="25" height="75">
+        </span>
          <span id="area5">area5</span>
          <span id="area6">area6</span>
          <span id="area7">area7</span>
