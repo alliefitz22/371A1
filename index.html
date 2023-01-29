@@ -9,58 +9,64 @@
         img {
             float: right 
         }
+        tr:nth-child(odd) {
+                background:lightblue;
+            }
+        tr:nth-child(even) {
+             background:grey;
+            }
         #mybox {
 
-    display: grid;
-    min-height: 200vh;
-    grid-template-rows: 100px 1fr 1fr 100px;
-    grid-template-columns: 30% 15% 40% 15%;
-    grid-template-areas:
-      "area1 area2"
-      "area3 area4 area5"
-      "area3 are6 area7"
-      "area3 area8";
-      gap: 2px;
-  }
+            display: grid;
+            min-height: 200vh;
+            grid-template-rows: 100px 1fr 1fr 100px;
+            grid-template-columns: 30% 15% 40% 15%;
+            grid-template-areas:
+            "area1 area2"
+            "area3 area4 area5"
+            "area3 are6 area7"
+            "area3 area8";
+            gap: 2px;
+        }
   
-  span {
-    text-align: center;
-    color: black;
-    padding: 1em;
-  }
+        span {
+            text-align: center;
+            color: black;
+            padding: 1em;
+        }
   
-  #area1 {
-    grid-area: 1/1/2/2;
-  }
+        #area1 {
+            grid-area: 1/1/2/2;
+        }
   
-  #area2 {
-    background: red;
-    grid-area: 1/2/2/5;
-  }
-  #area3 {
-    background: hsl(102, 36%, 48%);
-    grid-area: 2/1/5/2;
-  }
-  #area4 {
-    background: hsl(276, 100%, 50%);
-    grid-area: 2/2/3/4;
-  }
-  #area5 {
-    background: grey;
-    grid-area: 2/4/3/5;
-  }
-  #area6 {
-    background: black;
-    grid-area: 3/2/4/3;
-  }
-  #area7 {
-    background: black;
-    grid-area: 3/3/4/5;
-  }
-  #area8 {
-    background: black;
-    grid-area: 4/2/5/5;
-  }
+        #area2 {
+            /* background: red; */
+            grid-area: 1/2/2/5;
+        }
+        #area3 {
+            /* background: hsl(102, 36%, 48%); */
+            grid-area: 2/1/5/2;
+        }
+        #area4 {
+            background: hsl(276, 100%, 50%);
+            grid-area: 2/2/3/4;
+        }
+        #area5 {
+         background: grey;
+            grid-area: 2/4/3/5;
+        }
+        #area6 {
+            background: black;
+            grid-area: 3/2/4/3;
+        }
+        #area7 {
+            background: black;
+            grid-area: 3/3/4/5;
+        }
+        #area8 {
+            background: black;
+            grid-area: 4/2/5/5;
+        }
     </style>
     <div id="mybox">
         <span id="area1">
@@ -69,19 +75,81 @@
                 This is a picture of me with an ice sculpture at the president's ball. 
                 The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
                 And then, I realized that people were literally cutting in front of us because staff TOLD THEM TO. 
-                I was so frustrated. But once I got into the actual dance, I had fun. It was kind of crazy because right when
-                I walked in the president was on stage with some dancers. And then FIREWORKS started to go off on the stage which
-                really shocked me. But after that, the DJ started playing music again and I had a fun time.
-            </p>
+                I was so frustrated.
+                    </p>
         </span>
-        <span id="area2">area2</span>
-        <span id="area3">area3</span>
+        <span id="area2">
+           <h1>Allison Fitzgerald</h1>
+           <!-- add phone icon -->
+           <h2> (555) 119-1997 </h2>      
+        </span>
+        <span id="area3">
+            <table>
+                <tbody>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Name</th>
+                    <th>Semester Taken</th>
+                </tr>
+                <tr>
+                    <td>HNR 151</td>
+                    <td>American Modern 2</td>
+                    <td>Fall 2020 </td>
+                </tr>
+                <tr>
+                    <td>HNR 152 </td>
+                    <td>American Modern 2 </td>
+                    <td>Fall 2020 </td>
+                </tr>
+                <tr>
+                    <td>US 103</td>
+                    <td>Career Education Class</td>
+                    <td>Fall 2020</td>
+                </tr>
+                <tr>
+                    <td>CIS 162</td>
+                    <td>Computer Science 1</td>
+                    <td>Fall 2020</td>
+                </tr>
+                <tr>
+                    <td>CHM 115</td>
+                    <td>Principles of Chemistry 1</td>
+                    <td>Fall 2020</td>
+                </tr>
+                <tr> 
+                    <td>HNR 153</td>
+                    <td>American Modern 3</td>
+                    <td>Winter 2021</td>
+                </tr>
+                <tr>
+                    <td>CIS 163</td>
+                    <td>Computer Science 2</td>
+                    <td>Winter 2021</td>
+                </tr>
+                <tr>
+                    <td>DS 201</td>
+                    <td>Digital Identities and Communities</td>
+                    <td>Winter 2021</td>
+                </tr>
+                <tr>
+                    <td>Com 201</td>
+                    <td>Speech</td>
+                    <td>Winter 2021</td>
+                </tr>
+                <tr>
+                    <td>HNR 154</td>
+                    <td>SWS American Civilization 4</td>
+                    <td>Winter 2021</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </span>
         <span id="area4">area4</span>
          <span id="area5">area5</span>
          <span id="area6">area6</span>
          <span id="area7">area7</span>
          <span id="area8">area8</span>
-      
       </div>
 </html>
 
