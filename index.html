@@ -2,17 +2,13 @@
     <head>
         Allison Fitzgerald
     </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         p {
             text-align: justify;
         }
         .picMe {
-            float: right 
-        }
-        .chem {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            align-self: center;
         }
         tr:nth-child(odd) {
                 background:lightblue;
@@ -27,8 +23,8 @@
         #mybox {
 
             display: grid;
-            min-height: 200vh;
-            grid-template-rows: 100px 1fr 1fr 100px;
+            min-height: 100vh;
+            grid-template-rows: 100px auto auto 100px;
             grid-template-columns: 30% 15% 40% 15%;
             grid-template-areas:
             "area1 area2"
@@ -44,8 +40,10 @@
         }
   
         #area1 {
-            background: rgba(224, 255, 255, 0.599);
+            background: rgba(48, 127, 127, 0.599);
             grid-area: 1/1/2/2;
+            display: flex;
+            justify-content: center;
         }
   
         #area2 {
@@ -63,6 +61,10 @@
         #area5 {
             background: rgba(76, 76, 172, 0.705);
             grid-area: 2/4/3/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
         }
         #area6 {
             background: rgba(36, 153, 189, 0.705);
@@ -75,11 +77,15 @@
         #area8 {
             background: rgba(32, 178, 171, 0.66);
             grid-area: 4/2/5/5;
+            display: flex;
+            flex-direction: horizontal;
+            justify-content: center;
+            align-items: center;
         }
     </style>
     <div id="mybox">
         <span id="area1">
-            <img src="me_and-Snowflake.HEIC" class = picMe wdith="25" height="75">
+            <img src="IMG_1715.JPG" class = picMe wdith="25" height="75">
             <p>
                 This is a picture of me with an ice sculpture at the president's ball. 
                 The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
@@ -87,9 +93,10 @@
         </span>
 
         <span id="area2">
-           <h1> Allison Fitzgerald</h1>
+           <h1 style="position: relative; bottom: 10px";> Allison Fitzgerald</h1>
            <!-- add phone icon -->
-           <h2> (555) 119-1997 </h2>      
+           <h2 style="position: relative; top: -25px";> (555) 119-1997 <i class="fa fa-phone"style="font-size: 25px;"></i></h2>
+           
         </span>
 
         <span id="area3">
@@ -177,7 +184,13 @@
             <p> The experience was much better after that.</p>
         </span>
 
-         <span id="area8">area8</span>
+         <span id="area8">
+            <a href="https://github.com/home"><i class="fa fa-github"style="font-size: 50px;"></i></a>
+            <a href="https://twitter.com/home"><i class="fa fa-twitter"style="font-size: 50px; padding-left: 25px"></i></a>
+            <a href="https://www.amazon.com/home"><i class="fa fa-amazon"style="font-size: 50px; padding-left: 25px;"></i></a>
+            <a href="https://instagram.com"><i class="fa fa-instagram"style="font-size: 50px; padding-left: 25px;"></i></a>
+            <a href="https://facebook.com/home"><i class="fa fa-facebook-square"style="font-size: 50px; padding-left: 25px;"></i></a>
+         </span>
       </div>
 </html>
 
