@@ -4,9 +4,6 @@
     </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        p {
-            text-align: justify;
-        }
         .picMe {
             align-self: center;
         }
@@ -47,7 +44,7 @@
         }
   
         #area2 {
-            background: rgba(15, 29, 180, 0.686);
+            background: #00aaff;
             grid-area: 1/2/2/5;
         }
         #area3 {
@@ -85,7 +82,7 @@
     </style>
     <div id="mybox">
         <span id="area1">
-            <img src="IMG_1715.JPG" class = picMe wdith="25" height="75">
+            <img src="IMG_1715.JPG" class="picMe" wdith="25" height="75">
             <p>
                 This is a picture of me with an ice sculpture at the president's ball. 
                 The ball was fun, but I waited a whole HOUR in line waiting to just get into the place. 
@@ -100,7 +97,49 @@
         </span>
 
         <span id="area3">
-            area3
+            <p> The first thing I did when doing this assignment was create an html document and add a header. 
+                Then I built a grid using CSS. I created a box element and defined 4 rows, with the first and last one explicity sized as 100 pixels.
+                Then I defined 4 columns, making sure the first was 30% of the box and the second and last were 15%
+                of the box. I defined 8 areas of the box, sperating them by the rows they were in. I put this in the style 
+                heading. Then I created a div for the box that held by grid, and created 8 areas each with their own id. I used the corners
+                of each box to represent where each grid element was located in the grid. In
+                order to do all this, I used JS fiddle as a sort of template to get me started.  </p>
+            <p> In area 1, I used img src to add a pciture of myself. I then gave the picture its own class, so I could center
+                it horizontally in the style tag by referecing the photo's class and using align-self: center to center the picture
+                I also set the width to 25 and the height to 75 so it would fit in the box
+                I then added a paragraph, and in the area1 tag in the style tag i added display: flex and justify-content: center
+                so the paragraph would not run itno the photo </p>
+            <p> In area2, I added a header and adjusted its padding so it did not take up too much space in the middle and
+                there was room for the second header. I also added a second header and adjusted its padding and added a phone icon, which
+                I looked up how to add icons online. I changed the font size of the icon in order to change its size.</p>
+            <p>
+                In area 4, I created a table element with table. The direct child of table was the tr element, which represented
+                a row. In each row, I added three td elements, each included the specified data. I used th for the
+                first set of data as it is for header data. Then, in the style tag, I added tr:nth-child(odd) and (even) to have
+                the odd and even rows of the table appear as different colors. I used tr:hover in the same area in order to 
+                have the row turn yellow when it was hovered over.
+            </p>
+                In area 5, I added a picture and sized it so it would fit in the box. In the area4 element of the style element,
+                I used flexbox to put the picture in the center, and I aligned it to the center as well so it was vertically
+                and horizontally centered in the box. The flex direction I used was column, because the box is longer than
+                it is wide.
+            <p>
+                In area 6, i used the ul element in order to list a bunch of items, and I picked circle as the bullet point shape.
+                I then created 3 list items, each with a link defined by href and then an abbreviation of the company to
+                represent the actual text to be seen.
+            </p>
+            <p>
+                In area 7, I wrote a paragraph talking about my experience at the president's ball. To italicize words, I used
+                the i element. To bold words, I used the b element. To mimic code, I used the code element. I sperate each paragraph
+                using the p element.
+            </p>
+            <p>
+                For each logo, I declared an href, and gave each link a class that represented its logo, and used font-size to
+                size the logos. I determiend the class based on an online dictionary of different logos. I also adjusted the 
+                padding of each logo so they were not running into each other. Then in #area8, I used flex box to make the
+                photos horix=zontally center and aligned them in the center so they were centered both vertically and horixontally,
+                because I thought it looked beter. 
+            </p>
         </span>
         <span id="area4">
             <table>
