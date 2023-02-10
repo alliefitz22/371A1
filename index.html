@@ -1,6 +1,7 @@
 <html>
     <head>
         Allison Fitzgerald
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     </head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -18,7 +19,6 @@
             }
         
         #mybox {
-
             display: grid;
             min-height: 100vh;
             grid-template-rows: 100px auto auto 100px;
@@ -80,7 +80,7 @@
             align-items: center;
         }
     </style>
-    <div id="mybox">
+    <body id="mybox">
         <span id="area1">
             <img src="IMG_1715.JPG" class="picMe" wdith="25" height="75">
             <p>
@@ -137,80 +137,25 @@
                 For each logo, I declared an href, and gave each link a class that represented its logo, and used font-size to
                 size the logos. I determiend the class based on an online dictionary of different logos. I also adjusted the 
                 padding of each logo so they were not running into each other. Then in #area8, I used flex box to make the
-                photos horix=zontally center and aligned them in the center so they were centered both vertically and horixontally,
+                photos horizontally center and aligned them in the center so they were centered both vertically and horixontally,
                 because I thought it looked beter. 
             </p>
         </span>
         <span id="area4">
-            <table>
-                <tbody>
-                <tr>
-                    <th>Course Number</th>
-                    <th>Course Name</th>
-                    <th>Semester Taken</th>
-                </tr>
-                <tr>
-                    <td>HNR 151</td>
-                    <td>American Modern 2</td>
-                    <td>Fall 2020 </td>
-                </tr>
-                <tr>
-                    <td>HNR 152 </td>
-                    <td>American Modern 2 </td>
-                    <td>Fall 2020 </td>
-                </tr>
-                <tr>
-                    <td>US 103</td>
-                    <td>Career Education Class</td>
-                    <td>Fall 2020</td>
-                </tr>
-                <tr>
-                    <td>CIS 162</td>
-                    <td>Computer Science 1</td>
-                    <td>Fall 2020</td>
-                </tr>
-                <tr>
-                    <td>CHM 115</td>
-                    <td>Principles of Chemistry 1</td>
-                    <td>Fall 2020</td>
-                </tr>
-                <tr> 
-                    <td>HNR 153</td>
-                    <td>American Modern 3</td>
-                    <td>Winter 2021</td>
-                </tr>
-                <tr>
-                    <td>CIS 163</td>
-                    <td>Computer Science 2</td>
-                    <td>Winter 2021</td>
-                </tr>
-                <tr>
-                    <td>DS 201</td>
-                    <td>Digital Identities and Communities</td>
-                    <td>Winter 2021</td>
-                </tr>
-                <tr>
-                    <td>Com 201</td>
-                    <td>Speech</td>
-                    <td>Winter 2021</td>
-                </tr>
-                <tr>
-                    <td>HNR 154</td>
-                    <td>SWS American Civilization 4</td>
-                    <td>Winter 2021</td>
-                </tr>
-                </tbody>
-            </table>
+            <div id="table"></div>
         </span>
         <span id="area5">           
              <img src="chemistry.jpg" class="chem" wdith="200" height="200">
         </span>
-        <span id="area6">         
-            <ul style="list-style-type:circle">
+        <span id="area6"> 
+            <div id="area6-list">
+            </div>
+                        
+            <!-- <ul style="list-style-type:circle">
             <li><a href="https://www.walmart.com">WLMT</a></li>
             <li><a href="https://www.Target.com">TRGT</a></li>
             <li><a href="https://www.Meijer.com">MJR</a></li>
-          </ul>
+          </ul> -->
         </span>
          <span id="area7">         
             <p> The worst part about waiting an hour for the president's ball was that the staff members were telling people who arrived <b> AFTER</b> us to
@@ -224,12 +169,16 @@
         </span>
 
          <span id="area8">
-            <a href="https://github.com/home"><i class="fa fa-github"style="font-size: 50px;"></i></a>
+            <div id="area8-icons">
+            </div>
+
+            <!-- <a href="https://github.com/home"><i class="fa fa-github"style="font-size: 50px;"></i></a>
             <a href="https://twitter.com/home"><i class="fa fa-twitter"style="font-size: 50px; padding-left: 25px"></i></a>
             <a href="https://www.amazon.com/home"><i class="fa fa-amazon"style="font-size: 50px; padding-left: 25px;"></i></a>
             <a href="https://instagram.com"><i class="fa fa-instagram"style="font-size: 50px; padding-left: 25px;"></i></a>
-            <a href="https://facebook.com/home"><i class="fa fa-facebook-square"style="font-size: 50px; padding-left: 25px;"></i></a>
+            <a href="https://facebook.com/home"><i class="fa fa-facebook-square"style="font-size: 50px; padding-left: 25px;"></i></a> -->
          </span>
-      </div>
+         <script type ="text/babel" src = "mycode.ts"></script>
+        </body>
 </html>
 
